@@ -188,8 +188,34 @@ Type variableName = new Type();
 
 
 - [Conditionals & Operators](https://login.codingdojo.com/m/315/9299/62838)
+
+  #### objectives
+  - learn control flow in Java
+
+  - [Conditionals.java](./demos/fundamentals/controlFlow/Conditionals.java)
+
+  #### if statements
+```java
+if(true){
+  
+}
+```
+
+
+
 - [Switch Statements & Ternary Operators](https://login.codingdojo.com/m/315/9299/95997)
 - [Strings](https://login.codingdojo.com/m/315/9299/62840)
+
+  #### objectives
+  - learn the `String` class in Java
+  - practice the most popular String methods
+
+  #### methods of the String class
+  - [Strings.java](./demos/fundamentals/strings/Strings.java)
+
+  #### When to use `==` and when to use `.equals()`
+
+
 - [Methods](https://login.codingdojo.com/m/315/9299/62845)
 - [Modularization](https://login.codingdojo.com/m/315/9299/62841)
 - [Type Casting](https://login.codingdojo.com/m/315/9299/62844)
