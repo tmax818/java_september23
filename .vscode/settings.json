@@ -3,12 +3,17 @@
         "alfredbot",
         "asssignments",
         "Coffeedore",
+        "Corretto",
         "Daikichi",
         "firstjavaprogram",
         "Hashmatique",
+        "javac",
+        "javafun",
         "JSTL",
         "noscroll",
-        "Omikuji"
+        "Omikuji",
+        "println",
+        "sdkman"
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "interactive"
