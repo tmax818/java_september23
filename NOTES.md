@@ -1,21 +1,25 @@
 # [Java September](https://www.tylermaxwell.co/java_september23)
 
 
-## Stack Orientation
+# Stack Orientation
 
-## Java Fundamentals
+# Java Fundamentals
 
-### Setup
+## Setup
 
 - [JDK installation](https://login.codingdojo.com/m/315/9298/62827)
   - objectives:
     - install JDK
     - be ready to start coding
-  - **JDK**: Java Development Kit
-    - used to compile `.java` files to `.class` files that contain **bytecode**
+ 
+JDK
+: Java Development Kit
+: used to compile `.java` files to `.class` files that contain bytecode
 
-  - using [Amazon Corretto 17](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)
-  - [sdkman](https://sdkman.io/)
+
+- using [Amazon Corretto 17](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)
+
+- [sdkman](https://sdkman.io/)
 
 ```bash
 java -version
@@ -29,55 +33,84 @@ OpenJDK 64-Bit Server VM Corretto-17.0.5.8.1 (build 17.0.5+8-LTS, mixed mode, sh
 
 - [Java versioning](https://login.codingdojo.com/m/315/9298/70859)
 
-### Fundamentals (Day 1)
+## Fundamentals (Day 1)
 
-- [Why Java?](https://login.codingdojo.com/m/315/9299/62830)
+### [Why Java?](https://login.codingdojo.com/m/315/9299/62830)
 
-    #### objectives
-    - identify the advantages of Java
+#### objectives
+- identify the advantages of Java
 
-    #### strong/weak and static/dynamic typing
-    - **strong typing** -  you cannot convert variable types on the fly
-    - **weak typing** - a variable's type can be changed to another type on the fly
-    - **static typing** - assign a type to declared variables at compile time and set aside the right amount of memory for that variable.
-    - **dynamic typing** - assign types only when the variable declaration code runs during execution and change the memory allocated for the variable as needed.
+#### strong/weak and static/dynamic typing
+  
+strong typing  
+: you cannot convert variable types on the fly
 
-    #### compiled/interpreted
-    >a compiled language goes through analysis and optimization before it is run. The compiler can find repetitive code that you failed to optimize and do this for us, resulting in a faster program than we might otherwise have. The process of "compiling" your code will result in "bytecode" files that you can then execute using the JRE.
+weak typing
+:a variable's type can be changed to another type on the fly
 
-    > Interpreted languages are read and executed line by line.
+static typing 
+: assign a type to declared variables at compile time and set aside the right amount of memory for that variable.
+   
+dynamic typing 
+: assign types only when the variable declaration code runs during execution and change the memory allocated for the variable as needed.
+
+#### compiled/interpreted
+
+>a compiled language goes through analysis and optimization before it is run. The compiler can find repetitive code that you failed to optimize and do this for us, resulting in a faster program than we might otherwise have. The process of "compiling" your code will result in "bytecode" files that you can then execute using the JRE.
+
+
+> Interpreted languages are read and executed line by line.
 
     #### object oriented
 
 
-- [How does Java Work?](https://login.codingdojo.com/m/315/9299/62831)
+### [How does Java Work?](https://login.codingdojo.com/m/315/9299/62831)
 
-    #### objectives
-    - Understand how and why Java source code is compiled and run
-    - Understand the difference between compiled and interpreted languages
-    - Gain a high-level understanding of the Java Development Kit(JDK)
-    - Be able to explain what the Java Virtual Machine(JVM) does
+#### objectives
+- Understand how and why Java source code is compiled and run
+- Understand the difference between compiled and interpreted languages
+- Gain a high-level understanding of the Java Development Kit(JDK)
+- Be able to explain what the Java Virtual Machine(JVM) does
 
-    #### Source Code vs. Machine Code
-    - **machine code** - written as a sequence of 1s and 0s i.e. **binary**
-    - **run time** - instructions are executed by a computer
-    - **interpreted** - read and executed line by line. 
+#### Source Code vs. Machine Code
+
+**machine code**
+: written as a sequence of 1s and 0s i.e. **binary**
+
+**run time** 
+: when instructions are executed by a computer
+
+**interpreted**  
+: read and executed line by line. 
       - interpreter translation real time
-    - **compiled** - translated all at once before the code is executed, at compile time, and produce a build of the entire code before executing it at runtime.
-      - translation of a book
 
-    #### A Brief Overview of the JDK
-    - **platform independent** - compiled versions of the [Java] code can be executed directly by different operating systems like MacOS and Windows, even though they have different machine codes.
-    - **source code** - what we think of as our "code". written in plain text files with a `.java` extension
-    - **byte code** - intermediate code, NOT MACHINE CODE!! that is produced by the Java compiler. Running the following: 
+**compiled** 
+: translated all at once before the code is executed, at compile time, and produce a build of the entire code before executing it at runtime.
+: like the translation of a book
+
+#### A Brief Overview of the JDK
+
+**platform independent**  
+: compiled versions of the [Java] code can be executed directly by different operating systems like MacOS and Windows, even though they have different machine codes.
+
+**source code** 
+: what we think of as our "code". written in plain text files with a `.java` extension
+
+**byte code**
+: intermediate code, NOT MACHINE CODE!! that is produced by the Java compiler. 
+
+
+Running the following: 
 
 ```bash
 $ java Main.java
 ```
-    produces *byte code* which is a file with the `.class` extension. This *byte code* can be run on any platform. How?!
-  - **Java Virtual Machine(JVM)** the Java compiler that is not *platform independent*! Mac, Windows, and Linux all have different JVMs that can compile the *byte code* for their environment. 
+produces *byte code* which is a file with the `.class` extension. This *byte code* can be run on any platform. How?!
 
-- [Hello World](https://login.codingdojo.com/m/315/9299/62832)
+**Java Virtual Machine(JVM)** 
+: the Java compiler that is not *platform independent*! Mac, Windows, and Linux all have different JVMs that can compile the *byte code* for their environment. 
+
+### [Hello World](https://login.codingdojo.com/m/315/9299/62832)
 
   #### Hello, World!
   - [HelloWorld.java](./demos/fundamentals/helloworld/HelloWorld.java)
@@ -87,6 +120,7 @@ $ java Main.java
 public class HelloWorld {   
 }
 ```
+
   - class name MUST match the file name.
   - every Java program has to have an entry point:
 
@@ -95,6 +129,7 @@ public class HelloWorld {
 public static void main(String[] args) {        
     }
 ```
+
   - How do you `print` or `console.log` in Java?
 
 ```java
@@ -105,7 +140,6 @@ System.out.println("Hello, World!");
 
 ```java
 public class HelloWorld {
-
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
@@ -128,35 +162,38 @@ $ java HelloWorld
 
 
 
-- [Variables](https://login.codingdojo.com/m/315/9299/62836)
+### [Variables](https://login.codingdojo.com/m/315/9299/62836)
 
   #### objectives
   - Introduction to data types
   - Introduction to primitive versus object(reference) types
 
-  **variables** - a piece of memory to which we can assign data to make it easy to reuse. Tools to make our code understandable
+  variables
+  : a piece of memory to which we can assign data to make it easy to reuse. Tools to make our code understandable
 
   #### Type Declaration
 
-  **type declaration** - every variable must have one!
-  - we can catch mistakes at compile time as opposed to run time.
-  - this is a variable declaration:
+  type declaration
+  : every variable must have one!
+  : we can catch mistakes at compile time as opposed to run time.
+  
+this is a variable declaration:
 
 ```java
 Type variableName;
 ```
-  - this is variable initialization:
+this is variable initialization:
 
 ```java
 variableName = new Type();
 ```
-  - we can do both in one line:
+we can do both in one line:
 
 ```java
 Type variableName = new Type();
 ```
 
- - otherwise we get *default values*
+otherwise we get *default values*
 
   #### naming conventions:
   - no reserved words
@@ -187,7 +224,7 @@ Type variableName = new Type();
 %a %A	| Floating-point hexadecimal
 
 
-- [Conditionals & Operators](https://login.codingdojo.com/m/315/9299/62838)
+### [Conditionals & Operators](https://login.codingdojo.com/m/315/9299/62838)
 
   #### objectives
   - learn control flow in Java
@@ -195,16 +232,17 @@ Type variableName = new Type();
   - [Conditionals.java](./demos/fundamentals/controlFlow/Conditionals.java)
 
   #### if statements
+
 ```java
 if(true){
   
 }
 ```
 
+### [Switch Statements & Ternary Operators](https://login.codingdojo.com/m/315/9299/95997)
 
 
-- [Switch Statements & Ternary Operators](https://login.codingdojo.com/m/315/9299/95997)
-- [Strings](https://login.codingdojo.com/m/315/9299/62840)
+### [Strings](https://login.codingdojo.com/m/315/9299/62840)
 
   #### objectives
   - learn the `String` class in Java
@@ -216,7 +254,53 @@ if(true){
   #### When to use `==` and when to use `.equals()`
 
 
-- [Methods](https://login.codingdojo.com/m/315/9299/62845)
+### [Methods](https://login.codingdojo.com/m/315/9299/62845)
+
+  #### objectives
+  - Be able to declare and define methods in Java
+  - Understand method signatures
+  - Introduce overloading methods (using the same method name for different purposes)
+
+  #### methods vs. functions
+
+method 
+: what we call a function in Java and in Object Oriented Programming generally
+: a function that belongs to a class
+
+  #### Java method declaration
+
+```java
+public String functionName(){
+  return "This is what is returned. It has to correspond to the 'return type' in the method signature.";
+}
+```
+
+  #### method signatures:
+
+  
+method signature
+: the name of the method and the parameter types
+
+```java
+public static void main(String[] args){
+
+}
+```
+
+the method signature of the `main` method would be:
+
+```java
+main(String[])
+```
+ 
+  #### method overloading
+
+method overloading
+: we give two or more methods the same name, but they do different things.
+: overloaded methods must have different signatures.
+
+[Calculator.java](./demos/fundamentals/methods/Calculator.java)
+
 - [Modularization](https://login.codingdojo.com/m/315/9299/62841)
 - [Type Casting](https://login.codingdojo.com/m/315/9299/62844)
 - [Fixed Arrays](https://login.codingdojo.com/m/315/9299/62847)
