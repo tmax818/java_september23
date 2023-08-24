@@ -46,7 +46,7 @@ strong typing
 : you cannot convert variable types on the fly
 
 weak typing
-:a variable's type can be changed to another type on the fly
+: a variable's type can be changed to another type on the fly
 
 static typing 
 : assign a type to declared variables at compile time and set aside the right amount of memory for that variable.
@@ -61,7 +61,7 @@ dynamic typing
 
 > Interpreted languages are read and executed line by line.
 
-    #### object oriented
+#### object oriented
 
 
 ### [How does Java Work?](https://login.codingdojo.com/m/315/9299/62831)
@@ -82,7 +82,7 @@ dynamic typing
 
 **interpreted**  
 : read and executed line by line. 
-      - interpreter translation real time
+: like an interpreter translation real time
 
 **compiled** 
 : translated all at once before the code is executed, at compile time, and produce a build of the entire code before executing it at runtime.
@@ -164,19 +164,19 @@ $ java HelloWorld
 
 ### [Variables](https://login.codingdojo.com/m/315/9299/62836)
 
-  #### objectives
-  - Introduction to data types
-  - Introduction to primitive versus object(reference) types
+#### objectives
+- Introduction to data types
+- Introduction to primitive versus object(reference) types
 
-  variables
-  : a piece of memory to which we can assign data to make it easy to reuse. Tools to make our code understandable
+variables
+: a piece of memory to which we can assign data to make it easy to reuse. Tools to make our code understandable
 
-  #### Type Declaration
+#### Type Declaration
 
-  type declaration
-  : every variable must have one!
-  : we can catch mistakes at compile time as opposed to run time.
-  
+type declaration
+: every variable must have one!
+: we can catch mistakes at compile time as opposed to run time.
+
 this is a variable declaration:
 
 ```java
@@ -195,16 +195,16 @@ Type variableName = new Type();
 
 otherwise we get *default values*
 
-  #### naming conventions:
-  - no reserved words
-  - contains letters, numbers or under_scores
-  - camel case by convention
-  - cannot begin with a number
-  - no white space
-  - make variable names descriptive
+#### naming conventions:
+- no reserved words
+- contains letters, numbers or under_scores
+- camel case by convention
+- cannot begin with a number
+- no white space
+- make variable names descriptive
 
-  #### [javafun/Variables.java](./demos/javafun/Variables.java)
-  - IF YOU SEE CODE WHILE YOU ARE READING, RUN IT!!!!
+#### [javafun/Variables.java](./demos/javafun/Variables.java)
+- IF YOU SEE CODE WHILE YOU ARE READING, RUN IT!!!!
 
 |Format Specifier|Conversion Applied|
 |---|---|
@@ -226,12 +226,12 @@ otherwise we get *default values*
 
 ### [Conditionals & Operators](https://login.codingdojo.com/m/315/9299/62838)
 
-  #### objectives
-  - learn control flow in Java
+#### objectives
+- learn control flow in Java
 
-  - [Conditionals.java](./demos/fundamentals/controlFlow/Conditionals.java)
+- [Conditionals.java](./demos/fundamentals/controlFlow/Conditionals.java)
 
-  #### if statements
+#### if statements
 
 ```java
 if(true){
@@ -301,8 +301,12 @@ method overloading
 
 [Calculator.java](./demos/fundamentals/methods/Calculator.java)
 
-- [Modularization](https://login.codingdojo.com/m/315/9299/62841)
-- [Type Casting](https://login.codingdojo.com/m/315/9299/62844)
+### [Modularization](https://login.codingdojo.com/m/315/9299/62841)
+
+
+### [Type Casting](https://login.codingdojo.com/m/315/9299/62844)
+
+
 - [Fixed Arrays](https://login.codingdojo.com/m/315/9299/62847)
 - [ArrayLists(Dynamic Arrays)](https://login.codingdojo.com/m/315/9299/70864)
 - [Loops](https://login.codingdojo.com/m/315/9299/62848)
