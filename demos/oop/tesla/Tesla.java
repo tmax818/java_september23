@@ -17,7 +17,7 @@ public class Tesla {
         Tesla.totalTeslas++;
     }
 
-    // overloaded construtor
+    // overloaded constructor
     public Tesla(String color) {
         this();
         this.color = color;

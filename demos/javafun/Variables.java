@@ -11,7 +11,7 @@ public class Variables {
         double myDouble = 6.02e23;
         int myCharASCII = 'T';
         char myChar = 'T';
-        boolean myBoolean = "";
+        boolean myBoolean = true;
         
         System.out.printf("myByte is %d\n", myByte);
         System.out.printf("myShort is %d\n", myShort);
@@ -35,14 +35,14 @@ public class Variables {
         Character mywChar = 'T';
         Boolean mywBoolean = false;
         
-        System.out.printf("myByte is %d\n", mywByte.MAX_VALUE);
-        System.out.printf("myShort is %d\n", mywShort.MAX_VALUE);
-        System.out.printf("myInt is %d\n", mywInt.MAX_VALUE);
-        System.out.printf("myLong is %d\n", mywLong.MAX_VALUE);
-        System.out.printf("myFloat is %f\n", mywFloat.MAX_VALUE);
-        System.out.printf("myDouble is %f\n", mywDouble.MAX_VALUE);
-        System.out.printf("myChar is %c\n", mywChar.MAX_VALUE);
-        System.out.printf("myBoolean is %b\n", mywBoolean.booleanValue());
+        System.out.printf("mywByte is %d\n", mywByte.MAX_VALUE);
+        System.out.printf("mywShort is %d\n", mywShort.MAX_VALUE);
+        System.out.printf("mywInt is %d\n", mywInt.MAX_VALUE);
+        System.out.printf("mywLong is %d\n", mywLong.MAX_VALUE);
+        System.out.printf("mywFloat is %f\n", mywFloat.MAX_VALUE);
+        System.out.printf("mywDouble is %f\n", mywDouble.MAX_VALUE);
+        System.out.printf("mywChar is %c\n", mywChar.MAX_VALUE);
+        System.out.printf("mywBoolean is %b\n", mywBoolean.booleanValue());
         
     }
 }

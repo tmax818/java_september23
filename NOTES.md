@@ -303,13 +303,103 @@ method overloading
 
 ### [Modularization](https://login.codingdojo.com/m/315/9299/62841)
 
+#### Objectives:
+- Understand why and how to modularize your code
+- Import different java classes into your project
+- Use a test file to call methods from different classes
+
+#### the main method
+
+#### importing
+
+[DateExample.java](./demos/fundamentals/modularization/DateExample.java)
+
+#### dependency injection
+
+Dependency injection 
+: a way to use external code from another file.
+: create variable that will have access to all of another class's methods
+: the variable is an object instance
+
+[DependencyInjection](./demos/fundamentals/dependencyInjection/README.md)
+
 
 ### [Type Casting](https://login.codingdojo.com/m/315/9299/62844)
 
+#### Objective:
+- Introduction to casting (how to change types in Java)
+- Learn when to use primitive types versus object types
 
-- [Fixed Arrays](https://login.codingdojo.com/m/315/9299/62847)
-- [ArrayLists(Dynamic Arrays)](https://login.codingdojo.com/m/315/9299/70864)
-- [Loops](https://login.codingdojo.com/m/315/9299/62848)
+#### explicit
+
+explicit casting
+: declare the type that we want to convert to in our source code
+
+[Main.java](./demos/fundamentals/typeCasting/Main.java)
+
+#### implicit
+
+implicit casting
+: Java will allow implicit conversions as long as the target type has a range large enough for the conversion.
+
+
+### [Fixed Arrays](https://login.codingdojo.com/m/315/9299/62847)
+
+#### Objectives:
+- Arrays in java
+- Introduction to ArrayList
+
+#### fixed arrays
+
+- array declaration:
+
+```java
+int ARRAY_SIZE = 10;
+Type[] arrayName = new Type[ARRAY_SIZE];
+```
+
+[FixedArrays.java](./demos/fundamentals/fixedarrays/FixedArrays.java)
+
+
+### [ArrayLists(Dynamic Arrays)](https://login.codingdojo.com/m/315/9299/70864)
+
+#### Objectives:
+- Introduce ArrayLists in Java and how to use them
+- Introduce Generics
+- Start reading Java documentation
+
+#### The `ArrayList` Type (Dynamic Arrays)
+- `ArrayList` is not fixed in size
+
+
+#### Generics `<T>`
+- declare the acceptable types an ArrayList can hold
+- Generics help to keep our compiler, and us, from making mistakes that would bite us during runtime.
+[GenericExample.java](./demos/fundamentals/generics/GenericExample.java)
+
+#### `<Object>` only
+- have to use wrapper classes
+
+#### manipulating `ArrayList`s 
+
+[DynamicArrays.java](./demos/fundamentals/dynamicarrays/DynamicArrays.java)
+
+
+### [Loops](https://login.codingdojo.com/m/315/9299/62848)
+
+#### Objective:
+- For loops and while loops in Java
+
+#### `while`
+
+#### `for`
+
+#### enhanced `for`
+
+#### when not to use the enhanced `for`
+
+> If we're modifying the ArrayList that we are looping over, the enhanced for loop may encounter this error.
+
 - [Debugging in Java](https://login.codingdojo.com/m/315/9299/120722)
 - [Maps](https://login.codingdojo.com/m/315/9299/62852)
 - [Exceptions](https://login.codingdojo.com/m/315/9299/62854)
@@ -326,14 +416,65 @@ method overloading
 - [Puzzling](https://login.codingdojo.com/m/315/9299/62851)
 - [Map of the Hashmatique](https://login.codingdojo.com/m/315/9299/62853)
 
-## Java OOP
+# Java OOP
 
-### Java OOP (Day 2)
+## Java OOP (Day 2)
 
-- [Objects and Classes](https://login.codingdojo.com/m/315/9380/63306)
-- [Member Variables](https://login.codingdojo.com/m/315/9380/63308)
-- [Getters, Setters & Access Modifiers](https://login.codingdojo.com/m/315/9380/64177)
-- [Constructors and Overloading](https://login.codingdojo.com/m/315/9380/63309)
+### [Objects and Classes](https://login.codingdojo.com/m/315/9380/63306)
+
+#### Learning Objective:
+- Understanding the relationship between classes and objects
+
+object
+: a collection of behaviors and properties, (i.e. methods and fields)
+
+class
+: a blueprint for an object
+: nouns
+: created with the `class` keyword
+
+[Tesla.java](./demos/oop/tesla/Tesla.java)
+
+
+### [Member Variables](https://login.codingdojo.com/m/315/9380/63308)
+
+#### Objective:
+Defining member variables (attributes)
+
+member variable
+: **fields** in Java
+: adjectives or properties of an object
+: aka members, fields, instance variables, properties
+
+### [Getters, Setters & Access Modifiers](https://login.codingdojo.com/m/315/9380/64177)
+
+####  Objective:
+- Gain a high-level understanding of the convention for using access modifiers (private, public etc.)
+- Implementing getters and setters
+
+#### getters and setters
+
+getters 
+: methods that retrieve a field value 
+
+setters 
+: methods that set the field value. 
+
+> While it may seem repetitive to write getters and setters for every field, it is part of writing good, extensible, Java code that we explicitly declare access privileges for any member variable that we want to expose to the outside world, namely code written by other programmers, other parts of the application, and external applications.
+
+
+### [Constructors and Overloading](https://login.codingdojo.com/m/315/9380/63309)
+
+#### Objectives:
+- Introduction to constructors
+- Overloading constructors
+
+constructor
+: a special method that gets called when an instance of an object is created.
+: doesn't have a `return` type
+
+
+
 - [`this`](https://login.codingdojo.com/m/315/9380/63310)
 - [More on Methods](https://login.codingdojo.com/m/315/9380/63307)
 - [static](https://login.codingdojo.com/m/315/9380/63318)
@@ -350,11 +491,39 @@ method overloading
 - [Coffeedore 64](https://login.codingdojo.com/m/315/9380/64446)
 
 
-### Java OOP Advanced
+## Java OOP Advanced
 
 - [Spring Tool Suite(STS)](https://login.codingdojo.com/m/315/9381/65677)
 - [Packages](https://login.codingdojo.com/m/315/9381/65678)
-- [Four Pillars of OOP](https://login.codingdojo.com/m/315/9381/70889)
+### [Four Pillars of OOP](https://login.codingdojo.com/m/315/9381/70889)
+
+#### Objective:
+- Learn the 4 pillars of Object-Oriented Programming 
+- APIE
+
+
+#### Abstraction
+
+abstraction
+: an extension of Encapsulation.
+: focus on **how** as opposed to **why**
+#### Polymorphism
+
+polymorphism
+: means "many forms" 
+: a Child class can have a different version of a method than the Parent class.
+
+#### Inheritance
+
+inheritance
+: pass along attributes and methods from one class into a "sub-class"
+
+#### Encapsulation
+
+encapsulation
+: group code together into objects that will behave in an expected way
+: in Java involves controlling access to properties or methods with access modifiers and limiting control to the inner scope where necessary. 
+
 - [Inheritance](https://login.codingdojo.com/m/315/9381/64444)
 - [Interface](https://login.codingdojo.com/m/315/9381/63326)
 - [Interface Implementation](https://login.codingdojo.com/m/315/9381/67125)

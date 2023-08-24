@@ -1,33 +1,31 @@
-package demos.fundamentals.fixedarrays;
-
 import java.util.Arrays;
 
 public class FixedArrays {
 
     public static void main(String[] args) {
-        
-        // fixed array of ints
-        int[] intArray = new int[4];
-        intArray[0] = 42;
-        intArray[1] = 43;
-        intArray[2] = 2;
-        intArray[3] = 13;
-        intArray[3] = 99;
-        // intArray[4] = 100;
-        intArray[1] = 12345;
-        System.out.println(Arrays.toString(intArray));
-        
-        
-        // fixed array of doubles
-        double[] doubleArray = {3.4, 5.4, 5.0};
-        System.out.println(Arrays.toString(doubleArray));
 
+        System.out.println(Arrays.toString(args));
+
+        int[] ages = {23, 24, 45, 32, 12};
+        String[] names = new String[5];
+        // names[0] = "Suzie";
+        // names[1] = "Mark";
+        // names[2] = "Mary";
+        // names[3] = "Joe";
+        // names[4] = "John";
+        // names[0] = args[0];
+        // names[1] = args[1];
+        // names[2] = args[2];
+        // names[3] = args[3];
+        // names[4] = args[4];
+
+
+        for(int i = 0; i < ages.length; i++){
+            // System.out.println(ages[i]);
+            // System.out.println(names[i]);
+            System.out.printf("%s is %d years old!!\n", names[i], ages[i]);
+        }
         
-        // fixed array of strings
-        // String[] people = {"tyler", "Stephanie", "Hamzeh"};
-        String[] people = new String[3];
-        people[0] = "Tyler";
-        System.out.println(Arrays.toString(people));
 
 
     }
