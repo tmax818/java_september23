@@ -1,4 +1,4 @@
-# [Java September](https://www.tylermaxwell.co/java_september23){:target="_blank"}
+# [Java September](https://www.tylermaxwell.co/java_september23)
 
 
 # Stack Orientation
