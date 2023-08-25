@@ -517,6 +517,7 @@ polymorphism
 
 inheritance
 : pass along attributes and methods from one class into a "sub-class"
+: keeps our code DRY
 
 #### Encapsulation
 
@@ -524,7 +525,18 @@ encapsulation
 : group code together into objects that will behave in an expected way
 : in Java involves controlling access to properties or methods with access modifiers and limiting control to the inner scope where necessary. 
 
-- [Inheritance](https://login.codingdojo.com/m/315/9381/64444)
+### [Inheritance](https://login.codingdojo.com/m/315/9381/64444)
+
+#### Objective:
+- Inheritance in java
+- Overriding inherited methods
+
+#### Superclass, subclass, and extending
+
+[inheritance](./demos/fundamentals/inheritance/README.md)
+
+
+
 - [Interface](https://login.codingdojo.com/m/315/9381/63326)
 - [Interface Implementation](https://login.codingdojo.com/m/315/9381/67125)
 - [Annotations](https://login.codingdojo.com/m/315/9381/63331)
