@@ -1,5 +1,7 @@
 # [Java September](https://www.tylermaxwell.co/java_september23)
 
+## [class schedule](https://docs.google.com/spreadsheets/d/1yoz9hmHyemLgB6zjXvq-2a87OsuLSoMSt8pGms-vQGg/edit?usp=sharing)
+
 
 ## Stack Orientation
 
