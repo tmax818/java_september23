@@ -212,7 +212,7 @@ otherwise we get *default values*
 - no white space
 - make variable names descriptive
 
-#### [javafun/Variables.java](./demos/javafun/Variables.java)
+#### [javafun/Variables.java](./demos/fundamentals/javafun/Variables.java)
 - IF YOU SEE CODE WHILE YOU ARE READING, RUN IT!!!!
 
 |Format Specifier|Conversion Applied|
@@ -265,26 +265,26 @@ if(true){
 
 ### [Methods](https://login.codingdojo.com/m/315/9299/62845)
 
-  #### objectives
-  - Be able to declare and define methods in Java
-  - Understand method signatures
-  - Introduce overloading methods (using the same method name for different purposes)
+#### objectives
+- Be able to declare and define methods in Java
+- Understand method signatures
+- Introduce overloading methods (using the same method name for different purposes)
 
-  #### methods vs. functions
+#### methods vs. functions
 
 method 
 : what we call a function in Java and in Object Oriented Programming generally
 : a function that belongs to a class
 
-  #### Java method declaration
+#### Java method declaration
 
 ```java
 public String functionName(){
-  return "This is what is returned. It has to correspond to the 'return type' in the method signature.";
+return "This is what is returned. It has to correspond to the 'return type' in the method signature.";
 }
 ```
 
-  #### method signatures:
+#### method signatures:
 
   
 method signature
@@ -302,7 +302,7 @@ the method signature of the `main` method would be:
 main(String[])
 ```
  
-  #### method overloading
+#### method overloading
 
 method overloading
 : we give two or more methods the same name, but they do different things.
@@ -409,9 +409,18 @@ Type[] arrayName = new Type[ARRAY_SIZE];
 
 > If we're modifying the ArrayList that we are looping over, the enhanced for loop may encounter this error.
 
-- [Debugging in Java](https://login.codingdojo.com/m/315/9299/120722)
-- [Maps](https://login.codingdojo.com/m/315/9299/62852)
-- [Exceptions](https://login.codingdojo.com/m/315/9299/62854)
+### [Debugging in Java](https://login.codingdojo.com/m/315/9299/120722)
+
+#### Objective:
+- Students will use print statements to check and debug their code
+
+[Loops.java](./demos/fundamentals/debugging/Loops.java)
+
+
+### [Maps](https://login.codingdojo.com/m/315/9299/62852)
+
+
+### [Exceptions](https://login.codingdojo.com/m/315/9299/62854)
 
 #### assignments(core)
 
