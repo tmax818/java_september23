@@ -31,7 +31,13 @@ OpenJDK 64-Bit Server VM Corretto-17.0.5.8.1 (build 17.0.5+8-LTS, mixed mode, sh
 
 
 
-- [Java versioning](https://login.codingdojo.com/m/315/9298/70859)
+### [Java versioning](https://login.codingdojo.com/m/315/9298/70859)
+
+### [Java Study Strategies](https://login.codingdojo.com/m/315/9298/70860)
+
+#### Objectives:
+- Provide study and tool tips
+- Emphasize the importance of solving problems for learning
 
 ## Fundamentals (Day 1)
 
@@ -54,6 +60,8 @@ static typing
 dynamic typing 
 : assign types only when the variable declaration code runs during execution and change the memory allocated for the variable as needed.
 
+[strong vs static](https://stackoverflow.com/questions/2690544/what-is-the-difference-between-a-strongly-typed-language-and-a-statically-typed)
+
 #### compiled/interpreted
 
 >a compiled language goes through analysis and optimization before it is run. The compiler can find repetitive code that you failed to optimize and do this for us, resulting in a faster program than we might otherwise have. The process of "compiling" your code will result in "bytecode" files that you can then execute using the JRE.
@@ -74,18 +82,19 @@ dynamic typing
 
 #### Source Code vs. Machine Code
 
-**machine code**
-: written as a sequence of 1s and 0s i.e. **binary**
+machine code
+: written as a sequence of 1s and 0s i.e. binary
+: different for every platform (i.e. Mac, Windows, Linux)
 
-**run time** 
+run time 
 : when instructions are executed by a computer
 
-**interpreted**  
+interpreted  
 : read and executed line by line. 
-: like an interpreter translation real time
+: like an interpreter translating real time
 
-**compiled** 
-: translated all at once before the code is executed, at compile time, and produce a build of the entire code before executing it at runtime.
+compiled 
+: translated all at once before the code is executed, at compile time, and produce a build of the entire code before executing it at run time.
 : like the translation of a book
 
 #### A Brief Overview of the JDK
