@@ -3,8 +3,8 @@
 ## Java OOP Advanced (Days 3 and 4)
 
 |                                           |     |
-|-----------------------------------------------------------------------|:--------:|
-| [Car and Driver]()               | Practice |
+|-------------------------------------------|:--------:|
+| [Devices]()                     | Practice |
 | [Zoo Keeper]()                  | Core     |
 | [CareSoft Interfaces]()         | Core     |
 

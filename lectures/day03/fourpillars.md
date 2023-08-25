@@ -10,7 +10,7 @@
 --
 # Abstraction
 
-- abstraction is focus on essential quailites of an item <!-- .element: class="fragment" -->
+- abstraction is focus on essential qualities of an item <!-- .element: class="fragment" -->
 - interfaces <!-- .element: class="fragment" -->
 
 --

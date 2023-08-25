@@ -5,7 +5,7 @@
 
 ```java
 
-modifier <method-type> return-type methodName(optional parmas){
+modifier <method-type> return-type methodName(optional params){
     body
 }
 
@@ -15,7 +15,7 @@ modifier <method-type> return-type methodName(optional parmas){
 |modifier|details|
 |---|---|
 |private|Only the class in which it is declared can see and access the method. This is the most restrictive access level.|
-|protected|Protected access gives subclasses a chance to use the method, while preventing a nonrelated class from trying to use it.|
+|protected|Protected access gives subclasses a chance to use the method, while preventing a non-related class from trying to use it.|
 |public|Every class everywhere has access to the method.|
 
 --
@@ -27,7 +27,7 @@ modifier <method-type> return-type methodName(optional parmas){
 
 ## return type
 
-The data type of what comes after the `return` keyword in the body of your fuction.
+The data type of what comes after the `return` keyword in the body of your function.
 --
 
 ```java
