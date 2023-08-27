@@ -170,7 +170,7 @@ otherwise we get *default values*
 - no white space
 - make variable names descriptive
 
-#### [javafun/Variables.java](./demos/fundamentals/javafun/Variables.java)
+#### [Variables.java](../demos/fundamentals/javafun/Variables.java)
 - IF YOU SEE CODE WHILE YOU ARE READING, RUN IT!!!!
 
 |Format Specifier|Conversion Applied|
