@@ -183,63 +183,223 @@
 						}
 						</code></pre>
 				</section>
+				<section id="fit-text">
+					<h4>Java Data Types</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Type(primitive)</th>
+									<th>Size</th>
+									<th>Wrapper</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>boolean</td>
+									<td>1-bit</td>
+									<td>Boolean</td>
+								</tr>
+								<tr>
+									<td>byte</td>
+									<td>8-bit(1-byte)</td>
+									<td>Byte</td>
+								</tr>
+								<tr>
+									<td>short</td>
+									<td>16-bit(2-bytes)</td>
+									<td>Short</td>
+								</tr>
+								<tr>
+									<td>int</td>
+									<td>32-bit(4-byte)</td>
+									<td>Integer</td>
+								</tr>
+								<tr>
+									<td>long</td>
+									<td>64-bit(8-byte)</td>
+									<td>Long</td>
+								</tr>
+								<tr>
+									<td>float</td>
+									<td>32-bit(4-byte)</td>
+									<td>Float</td>
+								</tr>
+								<tr>
+									<td>double</td>
+									<td>64-bit(8-byte)</td>
+									<td>Double</td>
+								</tr>
+								<tr>
+									<td>char</td>
+									<td>32-bit(4-byte)</td>
+									<td>Character</td>
+								</tr>
+							</tbody>
+						</table>
+				</section>
 			</section>
 
-			<section id="fit-text">
-				<h4>Java Data Types</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Type(primitive)</th>
-								<th>Size</th>
-								<th>Wrapper</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>boolean</td>
-								<td>1-bit</td>
-								<td>Boolean</td>
-							</tr>
-							<tr>
-								<td>byte</td>
-								<td>8-bit(1-byte)</td>
-								<td>Byte</td>
-							</tr>
-							<tr>
-								<td>short</td>
-								<td>16-bit(2-bytes)</td>
-								<td>Short</td>
-							</tr>
-							<tr>
-								<td>int</td>
-								<td>32-bit(4-byte)</td>
-								<td>Integer</td>
-							</tr>
-							<tr>
-								<td>long</td>
-								<td>64-bit(8-byte)</td>
-								<td>Long</td>
-							</tr>
-							<tr>
-								<td>float</td>
-								<td>32-bit(4-byte)</td>
-								<td>Float</td>
-							</tr>
-							<tr>
-								<td>double</td>
-								<td>64-bit(8-byte)</td>
-								<td>Double</td>
-							</tr>
-							<tr>
-								<td>char</td>
-								<td>32-bit(4-byte)</td>
-								<td>Character</td>
-							</tr>
-						</tbody>
-					</table>
+
+			<section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/62838" target="_blank">Conditionals and
+							Operators</a></h2>
+				</section>
 			</section>
 
+			<section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/62840" target="_blank">Strings</a></h2>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/62845" target="_blank">Methods</a></h2>
+				</section>
+				<section>
+					<img src="../../images/method_sig_parts.png" width="8000px" alt="">
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p>access modifier: can be <code>public</code>, <code>private</code>, or <code>protected</code></p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public
+						</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p>must have a return type</p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public String
+						</code></pre>
+					<p>Whatever the function returns must be specified here</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p>function name: camel case by convention</p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public String myFunction
+						</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p>parentheses and curly braces, of course</p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public String myFunction() {}
+						</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p>Whatever the method does goes inside the curly braces</p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public String myFunction() {
+								//method body here
+							}
+						</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p>Notice that we specify what the function returns in the function signature</p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public String myFunction() {
+								//method body here
+								return "I am a string!!!";
+							}
+						</code></pre>
+					<p class="fragment">What if a function doesn't return anything??</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p><code>void</code> keyword</p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public void myFunction() {
+								//method body here
+								System.out.println("I am a string!!!");
+							}
+						</code></pre>
+					<p class="fragment">What about parameters??</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p><code>void</code> keyword</p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public void myFunction() {
+								//method body here
+								System.out.println("I am a string!!!");
+							}
+						</code></pre>
+					<p class="fragment">What about parameters??</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Methods</h2>
+					<p>Don't forget the <code>String</code> data type!!!</p>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+							public void myFunction(String strParam) {
+								//method body here
+								System.out.println(strParam);
+							}
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/62841">Modularization</a></h2>
+					<p class="fragment">allows us to use code from other files</p>
+				</section>
+				<section>
+					<h2>Dependency Injection</h2>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Dependency Injection</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+						// MyUtils.java
+						public class MyUtils {
+
+							public void reallyCoolMethod(){
+								System.out.println("This method is so cool!!!");
+							}
+							public void reallyCoolMethod1(){
+								System.out.println("This method is cooler than the last one!!!");
+							}
+							public void reallyCoolMethod2(){
+								System.out.println("This method is the best!!! So useful!!");
+							}
+							
+						}
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Dependency Injection</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+						// Main.java
+						public class Main {
+
+							public static void main(String[] args) {						
+							}
+							
+						}
+						
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Dependency Injection</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+						// Main.java
+						public class Main {
+
+							public static void main(String[] args) {
+								// Dependency Injection
+								MyUtils myUtils = new MyUtils();
+								myUtils.reallyCoolMethod();
+							}
+							
+						}
+						
+					</code></pre>
+				</section>
+			</section>
 
 
 

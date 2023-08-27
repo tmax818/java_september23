@@ -121,8 +121,10 @@ produces *byte code* which is a file with the `.class` extension. This *byte cod
 
 ### [Hello World](https://login.codingdojo.com/m/315/9299/62832)
 
-  #### Hello, World!
-  - [HelloWorld.java](./demos/fundamentals/helloworld/HelloWorld.java)
+#### Hello, World!
+[HelloWorld.java](./demos/fundamentals/helloworld/HelloWorld.java)
+
+Install the [Java Extension](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
 ```java
 // HelloWorld.java
@@ -212,7 +214,8 @@ otherwise we get *default values*
 - no white space
 - make variable names descriptive
 
-#### [javafun/Variables.java](./demos/fundamentals/Variables.java)
+
+[javafun/Variables.java](./demos/fundamentals/variables/Variables.java)
 - IF YOU SEE CODE WHILE YOU ARE READING, RUN IT!!!!
 
 |Format Specifier|Conversion Applied|
@@ -433,6 +436,8 @@ Type[] arrayName = new Type[ARRAY_SIZE];
 - [Alfred Bot](https://login.codingdojo.com/m/315/9299/62843)
 - [Puzzling](https://login.codingdojo.com/m/315/9299/62851)
 - [Map of the Hashmatique](https://login.codingdojo.com/m/315/9299/62853)
+
+
 
 # Java OOP
 
