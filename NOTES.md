@@ -509,7 +509,7 @@ constructor
 - [Coffeedore 64](https://login.codingdojo.com/m/315/9380/64446)
 
 
-## Java OOP Advanced
+## Java OOP Advanced (Day 3 and 4)
 
 - [Spring Tool Suite(STS)](https://login.codingdojo.com/m/315/9381/65677)
 - [Packages](https://login.codingdojo.com/m/315/9381/65678)
@@ -575,7 +575,7 @@ encapsulation
 
 ## Java Spring
 
-### Spring Intro
+### Spring Intro (Day 5 & 6)
 
 - [Overview](https://login.codingdojo.com/m/315/9532/64265)
 - [Mac Installation]()

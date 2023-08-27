@@ -92,7 +92,7 @@
 
 ## Java Spring
 
-### Spring Intro (Day 5)
+### Spring Intro (Day 5 & 6)
 
 - [Overview](https://login.codingdojo.com/m/315/9532/64265)
 - [Mac Installation]()
@@ -133,7 +133,7 @@
 - [Counter](https://login.codingdojo.com/m/315/9532/64284)
 - [Ninja Gold Game](https://login.codingdojo.com/m/315/9532/64289)
 
-### Spring MVC
+### Spring MVC (Day 7 and 8)
 
 - [MySql Server Installation Mac]()
 - [MySql Server Installation Windows]()
@@ -164,7 +164,7 @@
 -[Burger Tracker 1](https://login.codingdojo.com/m/315/9533/65990)
 -[Burger Tracker 2](https://login.codingdojo.com/m/315/9533/65992)
 
-### Adding One-toMany
+### Adding One-toMany (Day 9 and 10)
 
 - [Relationships](https://login.codingdojo.com/m/315/9534/64312)
 - []()
@@ -180,7 +180,7 @@
 
 - NONE
 
-### Full Spring
+### Full Spring (Day 11 and 12)
 
 - [Project Setup](https://login.codingdojo.com/m/315/9537/64343)
 - [User and LoginUser](https://login.codingdojo.com/m/315/9537/64344)

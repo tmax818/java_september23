@@ -1,0 +1,256 @@
+## Java OOP (Day 2)
+
+### [Objects and Classes](https://login.codingdojo.com/m/315/9380/63306)
+
+#### Learning Objective:
+- Understanding the relationship between classes and objects
+
+object
+: a collection of behaviors and properties, (i.e. methods and fields)
+
+class
+: a blueprint for an object
+: nouns
+: created with the `class` keyword
+
+[Tesla.java](./demos/oop/tesla/Tesla.java)
+
+
+### [Member Variables](https://login.codingdojo.com/m/315/9380/63308)
+
+#### Objective:
+Defining member variables (attributes)
+
+member variable
+: **fields** in Java
+: adjectives or properties of an object
+: aka members, fields, instance variables, properties
+
+### [Getters, Setters & Access Modifiers](https://login.codingdojo.com/m/315/9380/64177)
+
+####  Objective:
+- Gain a high-level understanding of the convention for using access modifiers (private, public etc.)
+- Implementing getters and setters
+
+#### getters and setters
+
+getters 
+: methods that retrieve a field value 
+
+setters 
+: methods that set the field value. 
+
+> While it may seem repetitive to write getters and setters for every field, it is part of writing good, extensible, Java code that we explicitly declare access privileges for any member variable that we want to expose to the outside world, namely code written by other programmers, other parts of the application, and external applications.
+
+
+### [Constructors and Overloading](https://login.codingdojo.com/m/315/9380/63309)
+
+#### Objectives:
+- Introduction to constructors
+- Overloading constructors
+
+constructor
+: a special method that gets called when an instance of an object is created.
+: doesn't have a `return` type
+
+
+
+- [`this`](https://login.codingdojo.com/m/315/9380/63310)
+- [More on Methods](https://login.codingdojo.com/m/315/9380/63307)
+- [static](https://login.codingdojo.com/m/315/9380/63318)
+
+
+#### assignments(core)
+
+- [BankAccount](https://login.codingdojo.com/m/315/9380/64118)
+
+#### assignments(practice)
+
+- [Orders and Items](https://login.codingdojo.com/m/315/9380/63311)
+- [Barista's Challenge](https://login.codingdojo.com/m/315/9380/64109)
+- [Coffeedore 64](https://login.codingdojo.com/m/315/9380/64446)
+
+
+## Java OOP Advanced (Day 3 and 4)
+
+- [Spring Tool Suite(STS)](https://login.codingdojo.com/m/315/9381/65677)
+- [Packages](https://login.codingdojo.com/m/315/9381/65678)
+### [Four Pillars of OOP](https://login.codingdojo.com/m/315/9381/70889)
+
+#### Objective:
+- Learn the 4 pillars of Object-Oriented Programming 
+- APIE
+
+
+#### Abstraction
+
+abstraction
+: an extension of Encapsulation.
+: focus on **how** as opposed to **why**
+#### Polymorphism
+
+polymorphism
+: means "many forms" 
+: a Child class can have a different version of a method than the Parent class.
+
+#### Inheritance
+
+inheritance
+: pass along attributes and methods from one class into a "sub-class"
+: keeps our code DRY
+
+#### Encapsulation
+
+encapsulation
+: group code together into objects that will behave in an expected way
+: in Java involves controlling access to properties or methods with access modifiers and limiting control to the inner scope where necessary. 
+
+### [Inheritance](https://login.codingdojo.com/m/315/9381/64444)
+
+#### Objective:
+- Inheritance in java
+- Overriding inherited methods
+
+#### Superclass, subclass, and extending
+
+[inheritance](./demos/fundamentals/inheritance/README.md)
+
+
+
+- [Interface](https://login.codingdojo.com/m/315/9381/63326)
+- [Interface Implementation](https://login.codingdojo.com/m/315/9381/67125)
+- [Annotations](https://login.codingdojo.com/m/315/9381/63331)
+- [Abstract](https://login.codingdojo.com/m/315/9381/63327)
+- [Abstract vs. Interfaces](https://login.codingdojo.com/m/315/9381/63328)
+- [POJO and Java Beans](https://login.codingdojo.com/m/315/9381/63332)
+
+#### assignments(core)
+
+- [Zookeeper](https://login.codingdojo.com/m/315/9381/64445)
+- [CareSoft Interfaces](https://login.codingdojo.com/m/315/9381/65739)
+
+#### assignments(practice)
+
+- [Devices](https://login.codingdojo.com/m/315/9381/64443)
+
+### Data Structures
+
+## Java Spring
+
+### Spring Intro  (Day 5 & 6)
+
+- [Overview](https://login.codingdojo.com/m/315/9532/64265)
+- [Mac Installation]()
+- [Windows Installation]()
+- [Start a New Spring Boot Project](https://login.codingdojo.com/m/315/9532/64268)
+- [Hello World](https://login.codingdojo.com/m/315/9532/64269)
+- [`@RestController` and Annotations](https://login.codingdojo.com/m/315/9532/64271)
+- [Routing](https://login.codingdojo.com/m/315/9532/64272)
+- [Query Parameters](https://login.codingdojo.com/m/315/9532/64273)
+- [URLs & `@PathVariable`](https://login.codingdojo.com/m/315/9532/64552)
+- [Java Server Pages(JSP)](https://login.codingdojo.com/m/315/9532/64276)
+- [JSTL Tags](https://login.codingdojo.com/m/315/9532/64553)
+- [Rendering with `@Controller`](https://login.codingdojo.com/m/315/9532/64278)
+- [More on Rendering Data](https://login.codingdojo.com/m/315/9532/64279)
+- [Adding Static Content(CSS & JS)](https://login.codingdojo.com/m/315/9532/64280)
+- [Bootstrap](https://login.codingdojo.com/m/315/9532/64281)
+- [JSTL Loops and You](https://login.codingdojo.com/m/315/9532/64288)
+- [Conditional JSTL Tags](https://login.codingdojo.com/m/315/9532/115852)
+- [Session](https://login.codingdojo.com/m/315/9532/64283)
+- [Session in Java](https://login.codingdojo.com/m/315/9532/65005)
+- [Form Submission](https://login.codingdojo.com/m/315/9532/64285)
+- [GET vs. POST](https://login.codingdojo.com/m/315/9532/65228)
+- [POST and Redirecting](https://login.codingdojo.com/m/315/9532/65235)
+- [Flash Data](https://login.codingdojo.com/m/315/9532/65017)
+- [Dependency Injection](https://login.codingdojo.com/m/315/9532/64290)
+
+#### assignments(core)
+
+- [Daikichi Path Variables](https://login.codingdojo.com/m/315/9532/64274)
+- [Fruity Loops](https://login.codingdojo.com/m/315/9532/64826)
+- [Omikuji Form](https://login.codingdojo.com/m/315/9532/64287)
+
+#### assignments(practice)
+
+- [Daikichi Routes](https://login.codingdojo.com/m/315/9532/64576)
+- [Hello Human](https://login.codingdojo.com/m/315/9532/64275)
+- [Hopper's Receipt](https://login.codingdojo.com/m/315/9532/64747)
+- [Counter](https://login.codingdojo.com/m/315/9532/64284)
+- [Ninja Gold Game](https://login.codingdojo.com/m/315/9532/64289)
+
+### Spring MVC (Day 7 and 8)
+
+- [MySql Server Installation Mac]()
+- [MySql Server Installation Windows]()
+- [MVC Design Pattern](https://login.codingdojo.com/m/315/9533/109115)
+- [MVC Layers in Spring](https://login.codingdojo.com/m/315/9533/64296)
+- [JPA](https://login.codingdojo.com/m/315/9533/64297)
+- [Connecting to MySQL](https://login.codingdojo.com/m/315/9533/64298)
+- [Domain Model and Validation Annotations](https://login.codingdojo.com/m/315/9533/64299)
+- [Repositories](https://login.codingdojo.com/m/315/9533/64300)
+- [Services](https://login.codingdojo.com/m/315/9533/64301)
+- [`@NotNull`](https://login.codingdojo.com/m/315/9533/115812)
+- [Adding Views - Goodbye API](https://login.codingdojo.com/m/315/9533/65957)
+- [Adding a Create Form](https://login.codingdojo.com/m/315/9533/65957)
+- [`@ModelAttribute` & Data Binding](https://login.codingdojo.com/m/315/9533/81390)
+- [Edit and Update](https://login.codingdojo.com/m/315/9533/64306)
+- [Delete](https://login.codingdojo.com/m/315/9533/64307)
+- [Appendix](https://login.codingdojo.com/m/315/9533/64310)
+
+#### assignments(core)
+
+-[Save Travels](https://login.codingdojo.com/m/315/9533/65999)
+
+#### asssignments(practice)
+
+-[Books API]()
+-[Rendering Books](https://login.codingdojo.com/m/315/9533/64305)
+-[All Books](https://login.codingdojo.com/m/315/9533/65956)
+-[Burger Tracker 1](https://login.codingdojo.com/m/315/9533/65990)
+-[Burger Tracker 2](https://login.codingdojo.com/m/315/9533/65992)
+
+### Adding One-toMany (Day 9 and 10)
+
+- [Relationships](https://login.codingdojo.com/m/315/9534/64312)
+- []()
+- [One to Many](https://login.codingdojo.com/m/315/9534/64315)
+- [Potential Data Binding Issues](https://login.codingdojo.com/m/315/9534/101373)
+- [Full MVC Review](https://login.codingdojo.com/m/315/9534/64323)
+
+#### assignments(core)
+
+- [Dojos and Ninjas](https://login.codingdojo.com/m/315/9534/64316)
+
+#### assignments(practice)
+
+- NONE
+
+### Full Spring (Day 11 and 12)
+
+- [Project Setup](https://login.codingdojo.com/m/315/9537/64343)
+- [User and LoginUser](https://login.codingdojo.com/m/315/9537/64344)
+- [Login Page: Controller and View](https://login.codingdojo.com/m/315/9537/64346)
+- [Password Security](https://login.codingdojo.com/m/315/9537/65364)
+- [Repository and Service](https://login.codingdojo.com/m/315/9537/64345)
+- [Authentication & Validation Logic](https://login.codingdojo.com/m/315/9537/81391)
+- [Multiple One-to-Many](https://login.codingdojo.com/m/315/9537/97382)
+- [Many-to-Many](https://login.codingdojo.com/m/315/9537/65321)
+- [Creating Many-to-Many Relationships](https://login.codingdojo.com/m/315/9537/65324)
+- [CascadeType](https://login.codingdojo.com/m/315/9537/106399)
+- [Belt Exam Rubric](https://login.codingdojo.com/m/315/9537/81392)
+
+#### assignments(core)
+
+- [Login & Registration](https://login.codingdojo.com/m/315/9537/65370)
+- [Book Club](https://login.codingdojo.com/m/315/9537/65319)
+
+### Spring Security
+### Advanced Queries
+### Spring Extras (Optional)
+
+
+
+
+
+
+
