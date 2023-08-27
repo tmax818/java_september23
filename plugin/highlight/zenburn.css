@@ -9,14 +9,14 @@ based on dark.css by Ivan Sagalaev
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #3f3f3f;
+  background: #272822;
   color: #dcdcdc;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-tag {
-  color: #e3ceab;
+  color: #f8b747;
 }
 
 .hljs-template-tag {
