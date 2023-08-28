@@ -345,7 +345,7 @@ Dependency injection
 explicit casting
 : declare the type that we want to convert to in our source code
 
-[Main.java](./demos/fundamentals/typeCasting/Main.java)
+[Main.java](../demos/fundamentals/typeCasting/Main.java)
 
 #### implicit
 
