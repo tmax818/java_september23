@@ -420,6 +420,8 @@ Type[] arrayName = new Type[ARRAY_SIZE];
 
 ### [Maps](https://login.codingdojo.com/m/315/9299/62852)
 
+[JavaMaps.java](../demos/fundamentals/maps/JavaMaps.java)
+
 
 ### [Exceptions](https://login.codingdojo.com/m/315/9299/62854)
 
