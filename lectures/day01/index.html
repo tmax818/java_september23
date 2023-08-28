@@ -401,6 +401,239 @@
 				</section>
 			</section>
 
+			<section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/62844" target="_blank">Type Casting</a></h2>
+				</section>
+				<section data-markdown="datatypes.md" data-separator="^---" data-separator-vertical="^--"
+					data-separator-notes="^note:" data-charset="iso-8859-15">
+				</section>
+
+				<section>
+					<h2>Explicit Casting</h2>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Type Casting</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+					// Main.java
+					public class Main {
+
+						public static void main(String[] args) {
+							short myShort; // short is two bytes wide 
+							byte myByte; // byte is a byte
+						}
+					}
+				</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Type Casting</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+					// Main.java
+					public class Main {
+
+						public static void main(String[] args) {
+							short myShort; // short is two bytes wide 
+							byte myByte; // byte is a byte
+							myShort = 42;
+						}
+					}
+				</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Type Casting</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+					// Main.java
+					public class Main {
+						
+						public static void main(String[] args) {
+							short myShort; // short is two bytes wide 
+							byte myByte; // byte is a byte
+							myShort = 42;
+							myByte = myShort;
+						}
+					}
+				</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Type Casting</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+					// Main.java
+					public class Main {
+						
+						public static void main(String[] args) {
+							short myShort; // short is two bytes wide 
+							byte myByte; // byte is a byte
+							myShort = 42;
+							myByte = (byte) myShort;
+						}
+					}
+				</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Type Casting</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+					// Main.java
+					public class Main {
+
+						public static void main(String[] args) {
+							short myShort; // short is two bytes wide 
+							byte myByte; // byte is a byte
+							myByte = (byte) myShort; // explicit casting required 
+							// due to narrowing conversion
+						}
+					}
+				</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Type Casting</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+					// Main.java
+					public class Main {
+
+						public static void main(String[] args) {
+							short myShort; // short is two bytes wide 
+							byte myByte; // byte is a byte
+							myByte = 12;
+						}
+					}
+				</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Type Casting</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+					// Main.java
+					public class Main {
+
+						public static void main(String[] args) {
+							short myShort; // short is two bytes wide 
+							byte myByte; // byte is a byte
+							myByte = 12;
+							myShort = myByte;
+						}
+					}
+				</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Type Casting</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+					// Main.java
+					public class Main {
+
+						public static void main(String[] args) {
+							short myShort; // short is two bytes wide 
+							byte myByte; // byte is a byte
+							myByte = 12;
+							myShort = myByte; // implicit casting is fine, widening conversion
+						}
+					}
+				</code></pre>
+				</section>
+
+			</section>
+
+			<section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/62847" target="_blank">Fixed</a> and <a href="https://login.codingdojo.com/m/315/9299/70864">Dynamic</a> arrays</h2>
+				</section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/62847" target="_blank">Fixed Arrays</a></h2>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Fixed Arrays</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+						// Main.java
+						public class Main {
+							
+							public static void main(String[] args) {
+								int[] numbers = new int[5];
+							}
+						}
+					</code></pre>
+					<p class="fragment">This creates an array of integers that will ALWAYS be 5 integers long!</p>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Fixed Arrays</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+						// Main.java
+						public class Main {
+							
+							public static void main(String[] args) {
+								String[] words = new String[50];
+							}
+						}
+					</code></pre>
+					<p class="fragment">This creates an array of strings that will ALWAYS be 50 strings long!</p>
+				</section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/70864" target="_blank">ArrayList(Dynamic Arrays)</a></h2>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Dynamic Arrays</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+						// Main.java
+						public class Main {
+							
+							public static void main(String[] args) {
+								ArrayList&ltInteger> myArray = new ArrayList&ltInteger>();
+							}
+						}
+					</code></pre>
+
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Dynamic Arrays</h2>
+					<pre data-id="code-animation"><code class="hljs java" data-trim data-line-numbers>
+						// Main.java
+						import java.util.ArrayList;
+						public class Main {
+							
+							public static void main(String[] args) {
+								ArrayList&ltInteger> myArray = new ArrayList&ltInteger>();
+							}
+						}
+					</code></pre>
+
+				</section>
+				
+			</section>
+
+			<section>
+				<section>
+					<h2><a href="https://login.codingdojo.com/m/315/9299/62848" target="_blank">Loops</a></h2>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">While Loop</h2>
+					<pre data-id="code-animation"><code class="language-java" data-trim data-line-numbers>
+						int i = 0;
+						while(i &lt 7)
+						{
+							System.out.println("foo");
+							i++;
+						}
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">For Loop</h2>
+					<pre data-id="code-animation"><code class="language-java" data-trim data-line-numbers>
+						for (int i = 0; i &lt 7; i++){
+							System.out.println("bar");
+						}
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Enhanced For Loop</h2>
+					<pre data-id="code-animation"><code class="language-java" data-trim data-line-numbers>
+						for(String name : dynamicArray){
+							System.out.println("hello " + name);
+						}
+						
+						
+					</code></pre>
+				</section>
+
+			</section>
+
 
 
 			<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
