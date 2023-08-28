@@ -1,11 +1,40 @@
+import java.util.Arrays;
 
 public class Basic13 {
+
+    static String INFO;
     
 // TODO: Print all the integers from 1 to 255.
 
+public static void print1to255(){
+    for(int i = 1; i < 256; i++){
+        System.out.println(i);
+    }
+}
+
 // TODO: Print integers from 0 to 255, and with each integer print the sum so far.
 
+public void printIntsAndSum(){
+    int sum = 0;
+    for(int i = 0; i < 256; i++){
+        sum += i; 
+        System.out.println(i);
+        System.out.println(sum);
+    }
+}
+
 // TODO: Given an array, find and print its largest element.
+
+public void findAndPrintLargest(int[] theArr){
+    int max = theArr[0];
+    for(int i = 1; i < theArr.length; i++ ){
+        if(theArr[i] > max){
+            max = theArr[i];
+        }
+    }
+    System.out.println(max);
+
+}
 
 // TODO: Create an array with all the odd integers between 1 and 255 (inclusive).
 

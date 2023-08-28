@@ -410,6 +410,8 @@ Type[] arrayName = new Type[ARRAY_SIZE];
 
 > If we're modifying the ArrayList that we are looping over, the enhanced for loop may encounter this error.
 
+[Looping.java](../demos/fundamentals/looping/Looping.java)
+
 ### [Debugging in Java](https://login.codingdojo.com/m/315/9299/120722)
 
 #### Objective:
