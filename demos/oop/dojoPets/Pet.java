@@ -1,12 +1,13 @@
 public class Pet {
 
-    private String name;
-    private String type;
-    private String[] tricks;
-    private int health;
-    private int energy;
+   private String name;
+   private String type;
+   private String[] tricks;
+   private int health;
+   private int energy;
 
-    public Pet(){
+
+    public Pet() {
         this.health = 100;
         this.energy = 100;
     }
@@ -19,35 +20,35 @@ public class Pet {
         this.health = health;
         this.energy = energy;
     }
-    
+
     public Pet(String name, String type, String[] tricks) {
         this();
         this.name = name;
         this.type = type;
         this.tricks = tricks;
-
-
-
     }
 
-
-    public void sleep(){
+    public Pet sleep(){
         this.energy += 25;
+        return this;
     }
-    public void eat(){
+    public Pet eat(){
         this.energy += 5;
         this.health += 10;
+        return this;
     }
-    public void play(){
-        this.health += 5;
-    }
-    public void noise(){
-        System.out.println("purrrrr");
+    public void play(){}
+    public void noise(){}
+
+    public void makeNoise(){
+        System.out.printf("The %s made its noise!!\n", this.getClass().getSimpleName());
     }
 
     public String getName() {
         return this.name;
     }
+
+
 
     public void setName(String name) {
         this.name = name;
@@ -85,11 +86,6 @@ public class Pet {
         this.energy = energy;
     }
 
-    public void makeNoise(){
-        System.out.printf("The %s is making its noise!\n", this.getClass().getSimpleName());
-    }
-
-
 
     @Override
     public String toString() {
@@ -101,7 +97,7 @@ public class Pet {
             ", energy='" + getEnergy() + "'" +
             "}";
     }
- 
+
 
     
 }
