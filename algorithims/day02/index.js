@@ -1,3 +1,5 @@
+console.log("hi")
+
 /**
  * A class to represents a single item of a SinglyLinkedList that can be
  * linked to other Node instances to form a list of linked nodes.
@@ -47,7 +49,9 @@ class ListNode {
      * - Space: O(?).
      * @returns {boolean}
      */
-    isEmpty() {}
+    isEmpty() {
+      return this.head === null;
+    }
   
     /**
      * Creates a new node with the given data and inserts it at the back of
@@ -57,7 +61,20 @@ class ListNode {
      * @param {any} data The data to be added to the new node.
      * @returns {SinglyLinkedList} This list.
      */
-    insertAtBack(data) {}
+    insertAtBack(data) {
+      // create the instance of the node class to hold our data
+
+      // either the list is empty or it's not
+      // if empty 
+        // set the head to the new node
+      // if it's not empty
+        // set a var as the runner
+        // loop over all the nodes until we find the node with a next equal to null
+        // set the last node's next value to the new node.
+      // 
+
+      return this;
+    }
   
     /**
      * Creates a new node with the given data and inserts it at the back of
