@@ -63,18 +63,24 @@ class ListNode {
      */
     insertAtBack(data) {
       // create the instance of the node class to hold our data
-      
+      const newBack = new ListNode(data)
       // either the list is empty or it's not
       // if empty 
         // set the head to the new node
+      if(this.isEmpty()){
+        this.head = newBack;
+        return this;
+      } 
         
       // if it's not empty
         // set a var as the runner
-       
+       let runner = this.head;
         // loop over all the nodes until we find the node with a next equal to null
-
+      while(runner.next !== null){
+        runner = runner.next;
+      }
         // set the last node's next value to the new node.
-
+        runner.next = newBack;
       return this;
     }
   
@@ -101,7 +107,13 @@ class ListNode {
      * @param {any} data The data for the new node.
      * @returns {SinglyLinkedList} This list.
      */
-    insertAtFront(data) {}
+    insertAtFront(data) {
+      // crate a new node
+      // set the next of the new node to the current head
+      // set the sll head to the new node
+
+
+    }
 
     /**
      * Removes the first node of this list.
@@ -180,4 +192,7 @@ class ListNode {
   // ]);
   
   // Print your list like so:
-  // console.log(firstThreeList.toArr());
+  // console.log(firstThreeList.toArr()); 
+
+  const mysll = new SinglyLinkedList()
+  const node1 = new ListNode(13)
