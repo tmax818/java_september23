@@ -174,7 +174,11 @@ class ListNode {
  * - Space: O(?).
  * @returns {any} The data from the node that was removed.
  */
-removeBack() {}
+removeBack() {
+  // 3 possibilities  the list could be empty, one node, multiple nodes
+
+
+}
 
 /**
  * Determines whether or not the given search value exists in this list.
@@ -183,7 +187,9 @@ removeBack() {}
  * @param {any} val The data to search for in the nodes of this list.
  * @returns {boolean}
  */
-contains(val) {}
+contains(val) {
+
+}
 
 /**
  * Determines whether or not the given search value exists in this list.
