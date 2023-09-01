@@ -175,8 +175,7 @@ class ListNode {
  * @returns {any} The data from the node that was removed.
  */
 removeBack() {
-
-  // 3 possibilities: empty, one node, multiple nodes
+  // 3 possibilities  the list could be empty, one node, multiple nodes
   // empty
   if(this.isEmpty()){
     return null
@@ -216,10 +215,10 @@ contains(val) {
     runner = runner.next;
   }
   return false;
+
 }
 
-
-//!FRIDAY 
+//!FRIDAY
 
 /**
  * Retrieves the data of the second to last node in this list.
@@ -228,23 +227,7 @@ contains(val) {
  * @returns {any} The data of the second to last node or null if there is no
  *    second to last node.
  */
-secondToLast() {
-  // case when there are 2 or fewer nodes
-  if(!this.head || !this.head.next){
-    return null;
-  }
-
-  //case when there are at least 2 nodes
-  let runner = this.head;
-
-  while(runner.next.next){
-    runner = runner.next;
-  }
-
-  return runner.data;
-
-
-}
+secondToLast() {}
 
 /**
  * Removes the node that has the matching given val as it's data.
@@ -254,30 +237,7 @@ secondToLast() {
  *    node to be removed.
  * @returns {boolean} Indicates if a node was removed or not.
  */
-removeVal(val) {
-  // empty list case
-  if(this.isEmpty()){
-    return false;
-  }
-
-  // val is in the first node
-  if(this.head.data === val){
-    this.removeHead();
-    return true;
-  }
-
-  // otherwise iterate
-  let runner = this.head;
-
-  while(runner.next){
-    if(runner.next.data === val){
-      runner.next = runner.next.next;
-      return true;
-    }
-    runner = runner.next;
-  }
-  return false;
-}
+removeVal(val) {}
 
 // EXTRA
 /**
@@ -290,6 +250,8 @@ removeVal(val) {
  * @returns {boolean} To indicate whether the node was pre-pended or not.
  */
 prepend(newVal, targetVal) {}
+
+
 /**
  * Determines whether or not the given search value exists in this list.
  * - Time: O(?).
