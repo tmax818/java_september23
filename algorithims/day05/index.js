@@ -227,7 +227,12 @@ contains(val) {
  * @returns {any} The data of the second to last node or null if there is no
  *    second to last node.
  */
-secondToLast() {}
+secondToLast() {
+  // fewer than two nodes
+
+  // at least two nodes
+
+}
 
 /**
  * Removes the node that has the matching given val as it's data.
@@ -237,7 +242,15 @@ secondToLast() {}
  *    node to be removed.
  * @returns {boolean} Indicates if a node was removed or not.
  */
-removeVal(val) {}
+removeVal(val) {
+  // empty
+  // return false
+
+  // is the val in the first node
+
+  // loop through the list to find the val remove the node that contains the val
+
+}
 
 // EXTRA
 /**
