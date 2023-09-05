@@ -44,7 +44,9 @@ class BSTNode {
      * - Space: O(?).
      * @returns {boolean} Indicates if this tree is empty.
      */
-    isEmpty() {}
+    isEmpty() {
+      return this.root === null
+    }
   
     /**
      * Retrieves the smallest integer data from this tree.
@@ -54,7 +56,15 @@ class BSTNode {
      *    the tree is being traversed.
      * @returns {number} The smallest integer from this tree.
      */
-    min(current = this.root) {}
+    min(current = this.root) {
+      if(current === null){
+        return null;
+      }
+      while(current.left){
+        current = current.left
+      }
+      return current.data;
+    }
   
     /**
      * Retrieves the smallest integer data from this tree.
