@@ -131,7 +131,9 @@ class BinarySearchTree {
    * @param {number} searchVal The number to search for in the node's data.
    * @returns {boolean} Indicates if the searchVal was found.
    */
-  contains(searchVal) {}
+  contains(searchVal) {
+    
+  }
 
   /**
    * Determines if this tree contains the given searchVal.
