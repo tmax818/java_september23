@@ -31,16 +31,16 @@
           </tr>
         </thead>
         <tbody>
-           <c:forEach var="car" items="${cars}">
                <tr>
 
                    <td><c:out value="${car.id}"></c:out></td>
                    <td><c:out value="${car.make}"></c:out></td>
                    <td><c:out value="${car.carModel}"></c:out></td>
                    <td><c:out value="${car.year}"></c:out></td>
-                   <td><a href="/cars/${car.id}">show</a></td>
+                   <td><a href="#">edit</a>
+                   <a href="#">delete</a></td>
                 </tr>
-            </c:forEach> 
+
 
         </tbody>
       </table>
