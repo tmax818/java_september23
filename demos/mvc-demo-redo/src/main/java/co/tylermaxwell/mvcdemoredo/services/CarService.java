@@ -19,13 +19,21 @@ public class CarService {
     }
 
     public Car getCarById(Long id) {
-        Optional<Car> car = carRepository.findById(id);
-        if(car.isPresent()){
-            return car.get();
-        } else {
-            return null;
-        }
-        
+        Optional<Car> optionalCar = carRepository.findById(id);
+        // if(car.isPresent()){
+        //     return car.get();
+        // } else {
+        //     return null;
+        // }
+        return optionalCar.orElse(null);
+    }
+
+    public void addCar(Car car) {
+        carRepository.save(car);
+    }
+
+    public void updateCar(Car car) {
+        carRepository.save(car);
     }
 
 

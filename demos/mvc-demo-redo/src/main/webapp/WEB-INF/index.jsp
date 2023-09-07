@@ -44,7 +44,7 @@
 
         </tbody>
       </table>
-
+      <a href="/cars/new" class="btn btn-outline-primary">add car</a>
    </div>
 </body>
 </html>

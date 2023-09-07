@@ -19,33 +19,31 @@
 </head>
 <body>
    <div class="container">
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">id</th>
-            <th scope="col">make</th>
-            <th scope="col">model</th>
-            <th scope="col">year</th>
-            <th scope="col">actions</th>
+   
 
-          </tr>
-        </thead>
-        <tbody>
-               <tr>
+    <h2>Edit a car</h2>
 
-                   <td><c:out value="${car.id}"></c:out></td>
-                   <td><c:out value="${car.make}"></c:out></td>
-                   <td><c:out value="${car.carModel}"></c:out></td>
-                   <td><c:out value="${car.year}"></c:out></td>
-                   <td><a href="/cars/edit/${car.id}">edit</a>
-                   <a href="#">delete</a></td>
-                </tr>
+    <form:form action="/cars" method="POST" modelAttribute="car">
+      <input type="hidden" name="_method" value="put">
+      <form:label path="make">make</form:label>
+      <form:input class="form-control" path="make" />
+      <form:errors path="make"/>
+
+      <form:label path="carModel">carModel</form:label>
+      <form:input class="form-control" path="carModel" />
+      <form:errors path="carModel"/>
+
+      <form:label path="year">year</form:label>
+      <form:input type="number" class="form-control" path="year" />
+      <form:errors path="year"/>
+
+      <input type="submit" value="add car">
 
 
-        </tbody>
-      </table>
+    </form:form>
 
-   </div>
 </body>
+
+
 </html>
 
