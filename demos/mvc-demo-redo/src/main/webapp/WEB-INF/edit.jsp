@@ -23,8 +23,8 @@
 
     <h2>Edit a car</h2>
 
-    <form:form action="/cars" method="POST" modelAttribute="car">
-      <input type="hidden" name="_method" value="put">
+    <form:form action="/cars/${car.id}" method="PUT" modelAttribute="car">
+      <!-- <input type="hidden" name="_method" value="put"> -->
       <form:label path="make">make</form:label>
       <form:input class="form-control" path="make" />
       <form:errors path="make"/>

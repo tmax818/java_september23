@@ -21,20 +21,18 @@
    <div class="container">
    
 
-    <form action="/carsOld" method="POST" model="oldcar">
+  
 
-        make: <input class="form-control" type="text" name="make" id="">
-
-      model: <input class="form-control" type="text" name="carModel" id="">
-      year: <input class="form-control" type="number" name="year" id="">
-
-      <input type="submit" value="add car">
-    </form>
-
-    <h2>New and improved form</h2>
+    <h2>Add car</h2>
 
     <form:form action="/cars" method="POST" modelAttribute="car">
-
+      <form:label path="driver">Drivers</form:label>
+      <form:select path="driver">
+        <c:forEach var="driver" items="${drivers}">
+          <option value="${driver.id}">${driver.name}</option>
+        </c:forEach>
+      </form:select>
+      <br>
       <form:label path="make">make</form:label>
       <form:input class="form-control" path="make" />
       <form:errors path="make"/>

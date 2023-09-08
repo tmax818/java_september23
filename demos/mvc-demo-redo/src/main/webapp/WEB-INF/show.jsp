@@ -38,7 +38,12 @@
                    <td><c:out value="${car.carModel}"></c:out></td>
                    <td><c:out value="${car.year}"></c:out></td>
                    <td><a href="/cars/edit/${car.id}">edit</a>
-                   <a href="#">delete</a></td>
+                    <form action="/cars/${car.id}" method="post">
+                      <input type="hidden" name="_method" value="delete">
+                      <input type="submit" value="Delete">
+                  </form>
+                   
+                  </td>
                 </tr>
 
 

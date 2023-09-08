@@ -19,6 +19,9 @@
 </head>
 <body>
    <div class="container">
+
+    <h1>Welcome <c:out value="${driver.name}"></c:out></h1>
+
     <table class="table">
         <thead>
           <tr>
@@ -31,25 +34,26 @@
           </tr>
         </thead>
         <tbody>
-           <c:forEach var="car" items="${cars}">
+          <c:forEach var="car" items="${driver.cars}">
                <tr>
-
-                   <td><c:out value="${car.id}"></c:out></td>
-                   <td><c:out value="${car.make}"></c:out></td>
-                   <td><c:out value="${car.carModel}"></c:out></td>
-                   <td><c:out value="${car.year}"></c:out></td>
-                   <td><a href="/cars/${car.id}">show</a>
+                  <td><c:out value="${car.id}"></c:out></td>
+                  <td><c:out value="${car.make}"></c:out></td>
+                  <td><c:out value="${car.carModel}"></c:out></td>
+                  <td><c:out value="${car.year}"></c:out></td>
+                  <td><a href="/cars/edit/${car.id}">edit</a>
                     <form action="/cars/${car.id}" method="post">
                       <input type="hidden" name="_method" value="delete">
                       <input type="submit" value="Delete">
-                  </form>
+                    </form>
+                    
                   </td>
                 </tr>
-            </c:forEach> 
+              </c:forEach>
+
 
         </tbody>
       </table>
-      <a href="/cars/new" class="btn btn-outline-primary">add car</a>
+
    </div>
 </body>
 </html>
