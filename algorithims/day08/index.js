@@ -275,6 +275,17 @@ insertRecursive(newVal, curr = this.root) {
   return this.insertRecursive(newVal, curr.left);
 }
 
+/* fullTree
+                    root
+                <-- 25 -->
+              /            \
+            15             50
+          /    \         /    \
+        10     22      35     70
+      /   \   /  \    /  \   /  \
+    4    12  18  24  31  44 66  90
+*/
+
 /**
  * DFS Preorder: (CurrNode, Left, Right)
  * Converts this BST into an array following Depth First Search preorder.

@@ -7,13 +7,17 @@
         "Daikichi",
         "firstjavaprogram",
         "Hashmatique",
+        "Inorder",
         "javac",
         "javafun",
         "JSTL",
         "noscroll",
         "Omikuji",
+        "Postorder",
+        "Preorder",
         "println",
-        "sdkman"
+        "sdkman",
+        "vals"
     ],
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "interactive"
