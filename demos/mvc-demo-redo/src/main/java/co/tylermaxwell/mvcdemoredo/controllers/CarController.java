@@ -33,18 +33,18 @@ public class CarController {
     public String newCar(@ModelAttribute Car car, Model model){
         List<Driver> drivers = driverService.getAllDrivers();
         model.addAttribute("drivers", drivers);
-        return "new.jsp";
+        return "cars/new.jsp";
     }
 
 
     @PostMapping("/cars")
     public String createCar(@Valid @ModelAttribute("car") Car car, BindingResult result){
         if(result.hasErrors()){
-            return "new.jsp";
+            return "cars/new.jsp";
         } else {
             // System.out.println(car.getDriver().getId());
             carService.addCar(car);
-            return String.format("redirect:/drivers/%d",car.getDriver().getId() );
+            return "redirect:/cars";
         }
 
 
@@ -60,11 +60,11 @@ public class CarController {
 
 
     //! READ - ALL
-    @GetMapping("/")
-    public String index(Model model){
+    @GetMapping("/cars")
+    public String cars(Model model){
         List<Car> cars = carService.getAll();
         model.addAttribute("cars", cars);
-        return "index.jsp";
+        return "cars/index.jsp";
     }
 
     //! READ - ONE
@@ -74,7 +74,7 @@ public class CarController {
         Car car = carService.getCarById(id);
         System.out.println(car);
         model.addAttribute("car", car);
-        return "show.jsp";
+        return "cars/show.jsp";
     }
 
     //! UPDATE
@@ -82,14 +82,18 @@ public class CarController {
     @GetMapping("/cars/edit/{id}")
     public String edit(@PathVariable Long id, Model model){
         Car car = carService.getCarById(id);
+        List<Driver> nonDrivers = driverService.getNonDriversofCar(car);
+        System.out.println(nonDrivers);
         model.addAttribute("car", car);
-        return "edit.jsp";
+        model.addAttribute("nonDrivers", nonDrivers);
+        return "cars/edit.jsp";
     }
 
     @PutMapping("/cars/{id}")
     public String update(@ModelAttribute Car car){
+        System.out.println(car);
         carService.addCar(car);
-        return "redirect:/";
+        return "redirect:/cars";
     }
 
     //! DELETE

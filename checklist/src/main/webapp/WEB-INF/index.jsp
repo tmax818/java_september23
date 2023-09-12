@@ -8,7 +8,7 @@
 <!-- for rendering errors on PUT routes -->
 <%@ page isErrorPage="true" %>
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Tacos</title>
@@ -18,40 +18,7 @@
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
 <body>
-   <div class="container">
    
-
-  
-
-    <h2>Add car</h2>
-
-    <form:form action="/cars" method="POST" modelAttribute="car">
-      <form:label path="driver">Drivers</form:label>
-      <form:select path="driver">
-        <c:forEach var="driver" items="${drivers}">
-          <option value="${driver.id}">${driver.name}</option>
-        </c:forEach>
-      </form:select>
-      <br>
-      <form:label path="make">make</form:label>
-      <form:input class="form-control" path="make" />
-      <form:errors path="make"/>
-
-      <form:label path="carModel">carModel</form:label>
-      <form:input class="form-control" path="carModel" />
-      <form:errors path="carModel"/>
-
-      <form:label path="year">year</form:label>
-      <form:input type="number" class="form-control" path="year" />
-      <form:errors path="year"/>
-
-      <input type="submit" value="add car">
-
-
-    </form:form>
-
 </body>
-
-
 </html>
 

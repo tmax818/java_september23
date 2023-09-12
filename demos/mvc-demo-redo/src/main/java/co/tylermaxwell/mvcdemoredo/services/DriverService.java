@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import co.tylermaxwell.mvcdemoredo.models.Car;
 import co.tylermaxwell.mvcdemoredo.models.Driver;
 import co.tylermaxwell.mvcdemoredo.repositories.DriverRepository;
 
@@ -21,5 +22,9 @@ public class DriverService {
     public Driver getOneDriverById(Long id) {
         Optional<Driver> driver = driverRepository.findById(id);
         return driver.orElse(null);
+    }
+
+    public List<Driver> getNonDriversofCar(Car car) {
+        return driverRepository.findByCarsNotContains(car);
     }
 }

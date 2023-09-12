@@ -8,7 +8,7 @@
 <!-- for rendering errors on PUT routes -->
 <%@ page isErrorPage="true" %>
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Tacos</title>
@@ -18,32 +18,31 @@
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
 <body>
-   <div class="container">
-   
+   <h1>Save Travels</h1>
+   <table class="table">
+    <thead>
+        <tr>
+            <th>Expense</th>
+            <th>Vendor</th>
+            <th>amount</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
 
-    <h2>Edit a car</h2>
+            <tr>
+                <td>
+                    <a href="/expenses/${expense.id}">
+                        ${expense.name}</td>
+                    </a>
+                <td>${expense.vendor}</td>
+                <td>$${expense.amount}</td>
+                <td>
+                    <a href="#">edit</a>
+                </td>
+            </tr>
 
-    <form:form action="/cars/${car.id}" method="PUT" modelAttribute="car">
-      <!-- <input type="hidden" name="_method" value="put"> -->
-      <form:label path="make">make</form:label>
-      <form:input class="form-control" path="make" />
-      <form:errors path="make"/>
-
-      <form:label path="carModel">carModel</form:label>
-      <form:input class="form-control" path="carModel" />
-      <form:errors path="carModel"/>
-
-      <form:label path="year">year</form:label>
-      <form:input type="number" class="form-control" path="year" />
-      <form:errors path="year"/>
-
-      <input type="submit" value="add car">
-
-
-    </form:form>
-
+    </tbody>
+   </table>
 </body>
-
-
 </html>
-

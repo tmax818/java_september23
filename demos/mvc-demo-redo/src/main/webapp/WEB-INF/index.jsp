@@ -9,6 +9,7 @@
 <%@ page isErrorPage="true" %>
 <!DOCTYPE html>
 <html data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <title>Tacos</title>
@@ -17,40 +18,66 @@
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
+
 <body>
-   <div class="container">
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">id</th>
-            <th scope="col">make</th>
-            <th scope="col">model</th>
-            <th scope="col">year</th>
-            <th scope="col">actions</th>
+    <div class="container">
 
-          </tr>
-        </thead>
-        <tbody>
-           <c:forEach var="car" items="${cars}">
-               <tr>
+        <h2 class="display-1">Registration</h2>
 
-                   <td><c:out value="${car.id}"></c:out></td>
-                   <td><c:out value="${car.make}"></c:out></td>
-                   <td><c:out value="${car.carModel}"></c:out></td>
-                   <td><c:out value="${car.year}"></c:out></td>
-                   <td><a href="/cars/${car.id}">show</a>
-                    <form action="/cars/${car.id}" method="post">
-                      <input type="hidden" name="_method" value="delete">
-                      <input type="submit" value="Delete">
-                  </form>
-                  </td>
-                </tr>
-            </c:forEach> 
+        <div class="card shadow">
+            <div class="card-body">
+                <form:form action="/register" method="post" modelAttribute="newUser">
+                    <div class="mb-3">
+                        <form:label class="form-label" path="userName">user name</form:label>
+                        <form:input class="form-control" path="userName"></form:input>
+                        <form:errors class="form-text text-warning" path="userName"></form:errors>
+                    </div>
+                    <div class="mb-3">
+                        <form:label class="form-label" path="email">email</form:label>
+                        <form:input class="form-control" path="email"></form:input>
+                        <form:errors class="form-text text-warning" path="email"></form:errors>
+                    </div>
+                    <div class="mb-3">
+                        <form:label class="form-label" path="password">password</form:label>
+                        <form:input class="form-control" path="password"></form:input>
+                        <form:errors class="form-text text-warning" path="password"></form:errors>
+                    </div>
+                    <div class="mb-3">
+                        <form:label class="form-label" path="confirm">confirm password</form:label>
+                        <form:input class="form-control" path="confirm"></form:input>
+                        <form:errors class="form-text text-warning" path="confirm"></form:errors>
+                    </div>
 
-        </tbody>
-      </table>
-      <a href="/cars/new" class="btn btn-outline-primary">add car</a>
-   </div>
+                    <input class="btn btn-primary" type="submit" value="register">
+
+                </form:form>
+            </div>
+        </div>
+
+        <h2 class="display-1">Login</h2>
+        <div class="card shadow">
+            <div class="card-body">
+                <form:form action="/login" method="post" modelAttribute="newLogin">
+
+                    <div class="mb-3">
+                        <form:label class="form-label" path="email">email</form:label>
+                        <form:input class="form-control" path="email"></form:input>
+                        <form:errors class="form-text text-warning" path="email"></form:errors>
+                    </div>
+                    <div class="mb-3">
+                        <form:label class="form-label" path="password">password</form:label>
+                        <form:input class="form-control" path="password"></form:input>
+                        <form:errors class="form-text text-warning" path="password"></form:errors>
+                    </div>
+
+                    <input class="btn btn-primary" type="submit" value="login">
+
+                </form:form>
+            </div>
+        </div>
+    </div>
+
+
 </body>
-</html>
 
+</html>

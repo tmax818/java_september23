@@ -1,12 +1,16 @@
 package co.tylermaxwell.mvcdemoredo.models;
 
 import java.util.List;
+import java.util.Locale.Category;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -20,20 +24,19 @@ public class Driver {
 
     private String name;
     private String email;
-
-    @OneToMany(mappedBy = "driver", fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+        name = "cars_drivers", 
+        joinColumns = @JoinColumn(name = "driver_id"), 
+        inverseJoinColumns = @JoinColumn(name = "car_id")
+    )
     private List<Car> cars;
 
 
     public Driver() {
     }
 
-    public Driver(Long id, String name, String email, List<Car> cars) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.cars = cars;
-    }
+
 
 
     public Long getId() {

@@ -31,25 +31,26 @@
           </tr>
         </thead>
         <tbody>
+           <c:forEach var="car" items="${cars}">
                <tr>
 
                    <td><c:out value="${car.id}"></c:out></td>
                    <td><c:out value="${car.make}"></c:out></td>
                    <td><c:out value="${car.carModel}"></c:out></td>
                    <td><c:out value="${car.year}"></c:out></td>
-                   <td><a href="/cars/edit/${car.id}">edit</a>
+                   <td><a href="/cars/${car.id}">show</a>
                     <form action="/cars/${car.id}" method="post">
                       <input type="hidden" name="_method" value="delete">
                       <input type="submit" value="Delete">
                   </form>
-                   
                   </td>
                 </tr>
-
+            </c:forEach> 
 
         </tbody>
       </table>
-
+      <a href="/cars/new" class="btn btn-outline-primary">add car</a>
+      <a href="/logout" class="btn btn-danger">logout</a>
    </div>
 </body>
 </html>

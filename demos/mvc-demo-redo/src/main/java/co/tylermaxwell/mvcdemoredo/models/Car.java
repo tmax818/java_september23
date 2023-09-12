@@ -1,12 +1,15 @@
 package co.tylermaxwell.mvcdemoredo.models;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
@@ -31,9 +34,13 @@ public class Car {
     @Min(1900)
     private Integer year;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="driver_id")
-    private Driver driver;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+        name = "cars_drivers", 
+        joinColumns = @JoinColumn(name = "car_id"), 
+        inverseJoinColumns = @JoinColumn(name = "driver_id")
+    )
+    private List<Driver> drivers;
 
 
 
@@ -41,23 +48,17 @@ public class Car {
     }
 
 
-
-    public Car(Long id, String make, String carModel, Integer year, Driver driver) {
-        this.id = id;
-        this.make = make;
-        this.carModel = carModel;
-        this.year = year;
-        this.driver = driver;
-    }
   
 
-    public Driver getDriver() {
-        return this.driver;
+    public List<Driver> getDrivers() {
+        return this.drivers;
     }
 
-    public void setDriver(Driver driver) {
-        this.driver = driver;
+    public void setDrivers(List<Driver> drivers) {
+        this.drivers = drivers;
     }
+
+
 
 
     public Long getId() {
