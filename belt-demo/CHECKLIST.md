@@ -1,4 +1,4 @@
-# checklist
+# beltdemo
 
 - [ ] update [application.properties](./src/main/resources/application.properties)
 
@@ -6,7 +6,7 @@
 # Where are jsp files? HERE!
 spring.mvc.view.prefix=/WEB-INF/
 # Data Persistence
-spring.datasource.url=jdbc:mysql://localhost:3306/checklist
+spring.datasource.url=jdbc:mysql://localhost:3306/beltdemo
 spring.datasource.username=root
 spring.datasource.password=root
 spring.jpa.hibernate.ddl-auto=update
@@ -173,7 +173,7 @@ spring.mvc.hiddenmethod.filter.enabled=true
 
 ```
 
-- [ ] add [User.java](./src/main/java/co/tylermaxwell/checklist/models/User.java)
+- [ ] add [User.java](./src/main/java/co/tylermaxwell/beltdemo/models/User.java)
 
 ```java
 import java.util.Date;
@@ -300,7 +300,7 @@ public class User {
 
 ```
 
-- [ ] add [LoginUser.java](./src/main/java/co/tylermaxwell/checklist/models/LoginUser.java)
+- [ ] add [LoginUser.java](./src/main/java/co/tylermaxwell/beltdemo/models/LoginUser.java)
 
 ```java
 import jakarta.validation.constraints.Email;
@@ -343,7 +343,7 @@ public class LoginUser {
 
 ```
 
-- [ ] add [controllers](./src/main/java/co/tylermaxwell/checklist/controllers/HomeController.java)
+- [ ] add [controllers](./src/main/java/co/tylermaxwell/beltdemo/controllers/HomeController.java)
 
 ```java
 
@@ -453,7 +453,7 @@ public class HomeController {
 
 ```
 
-- [UserRepository.java](./src/main/java/co/tylermaxwell/checklist/repositories/UserRepository.java)
+- [UserRepository.java](./src/main/java/co/tylermaxwell/beltdemo/repositories/UserRepository.java)
 
 ```java
 
@@ -470,7 +470,7 @@ public interface UserRepository extends CrudRepository<User, Long>  {
 
 ```
 
-- [UserService.java](./src/main/java/co/tylermaxwell/checklist/service/UserService.java)
+- [UserService.java](./src/main/java/co/tylermaxwell/beltdemo/service/UserService.java)
 
 ```java
 

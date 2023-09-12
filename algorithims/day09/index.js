@@ -341,7 +341,7 @@ toArrPostorder(node = this.root, vals = []) {
   return vals;
 }
 
-//! MONDAY
+//! TUESDAY
 /* fullTree
                     root
                 <-- 25 -->
@@ -361,7 +361,10 @@ toArrPostorder(node = this.root, vals = []) {
  * @param {Node} current The current node during the traversal of this tree.
  * @returns {Array<number>} The data of all nodes in BFS order.
  */
-toArrLevelorder(current = this.root) {}
+toArrLevelorder(current = this.root) {
+  const queue = [];
+  const vals = [];
+}
 
 /**
  * Recursively counts the total number of nodes in this tree.
