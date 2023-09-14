@@ -16,6 +16,32 @@ class MinHeap {
        */
       this.heap = [null];
     }
+
+    size(){
+      return this.heap.length -1;
+    }
+
+    idxParent(i){
+      return Math.floor(i/2);
+    }
+
+    idxLeftChild(i){
+      return i * 2;
+    }
+
+    idxRightChild(i){
+      return i * 2 + 1
+    }
+
+    swap(i,j){
+      const temp = this.heap[j];
+      this.heap[j] = this.heap[i];
+      this.heap[i] = temp;
+    }
+
+    swapFancy(i,j){
+      [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]];
+    }
   
     /**
      * Retrieves the top (minimum number) in the heap without removing it.
@@ -23,7 +49,9 @@ class MinHeap {
      * - Space: O(1) constant.
      * @returns {?number} Null if empty.
      */
-    top() {}
+    top() {
+      return this.heap.length > 1 ? this.heap[1] : null; 
+    }
   
     /**
      * Inserts a new number into the heap and maintains the heaps order.
