@@ -79,7 +79,7 @@ class MinHeapBasic {
      */
     insert(num) {
       this.heap.push(num);
-      this.shiftUp2();
+      this.shiftUp();
       // .push on array returns the new length
       return this.size();
     }
