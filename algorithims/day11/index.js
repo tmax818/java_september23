@@ -2,7 +2,7 @@
 TODO: Create the DLLNode class and implement the DoublyLinkedList constructor
 and the empty methods below the constructor.
 */
-class Node {}
+class DLLNode {}
 /**
  * A class to represent a doubly linked list and contain all of it's methods.
  * A doubly linked list is a singly linked list that can be traversed in both
