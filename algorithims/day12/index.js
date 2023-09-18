@@ -21,7 +21,10 @@ class Stack {
      * @param {any} item The new item to be added to the top / back.
      * @returns {number} The new length of this stack.
      */
-    push(item) {}
+    push(item) {
+      return this.items.push(item);
+      
+    }
   
     /**
      * Removes the top / last item from this stack.
